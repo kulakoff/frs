@@ -10,7 +10,7 @@ git clone --recurse-submodules https://github.com/rosteleset/frs.git
 ### Установка драйверов NVIDIA (если используется GPU)
 На хост-сервер необходимо установить драйвера GPU. Можно использовать [описание](https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html#ubuntu-lts) или выпполнить команду:
 ```bash
-$ sudo ~/frs/docker/setup_nvidia_drivers.sh
+sudo ~/frs/docker/setup_nvidia_drivers.sh
 ```
 Перезагрузить систему.
 
