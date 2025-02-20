@@ -25,7 +25,7 @@ ENV CXX=clang++-$LLVM_VERSION
 
 # Сборка Boost
 RUN cd ~ \
-    && wget https://boostorg.jfrog.io/artifactory/main/release/$BOOST_VERSION/source/boost_$BOOST_SUFFIX.zip \
+    && wget https://archives.boost.io/release/$BOOST_VERSION/source/boost_$BOOST_SUFFIX.zip \
     && unzip boost_$BOOST_SUFFIX.zip \
     && cd boost_$BOOST_SUFFIX/tools/build \
     && ./bootstrap.sh --cxx=clang++-$LLVM_VERSION \
